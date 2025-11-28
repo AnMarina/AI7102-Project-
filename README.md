@@ -21,8 +21,6 @@ The model architecture is a **U-Net** with a **ResNet-34 encoder**, designed to 
 * 2 Radar (Sentinel-1)
 * 1 Label (LULC)
 
----
-
 ## Project Structure
 
 ```bash
@@ -41,7 +39,6 @@ central-asia-lulc/
 │
 └── README.md                   # Project documentation
 ```
-
 
 ## Dependencies & Installation
 
