@@ -29,13 +29,14 @@ central-asia-lulc/
 ├── src/
 │   └── data/                   # CSV coordinate files (Samples_Country.csv)
 │
-├── scripts/                    # Python source code
-│   ├── download_chips.py       # Data extraction script (GEE -> Local)
-│   ├── dataset_loader.py       # PyTorch Dataset class & preprocessing
-│   ├── model.py                # U-Net architecture definition
-│   ├── train.py                # Main training loop (Train/Val/Test split)
-│   ├── evaluate.py             # Quantitative evaluation (IoU calculation)
-│   └── visualize.py            # Qualitative visualization (Input vs. Prediction)
+├── scripts/                           # Python source code
+│   ├── download_chips.py              # Data extraction script (GEE to local). Kazakhstan, Turkmenistan, 30m resolution.
+|   ├── download_additional_chips.py   # Kyrgyzstan, Uzbekistan, Tajikistan, 10m resolution 
+│   ├── dataset_loader.py              # PyTorch Dataset class & preprocessing
+│   ├── model.py                       # U-Net architecture definition
+│   ├── train.py                       # Main training loop (Train/Val/Test split)
+│   ├── evaluate.py                    # Quantitative evaluation (IoU calculation)
+│   └── visualize.py                   # Qualitative visualization (Input vs. Prediction)
 │
 └── README.md                   # Project documentation
 ```
